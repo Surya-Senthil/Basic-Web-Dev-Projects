@@ -1,0 +1,60 @@
+@import "form";
+@import "mq";
+@import "items";
+@import "vars";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+body {
+  font: 1rem "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode",
+    "Lucida Sans", Tahoma, sans-serif;
+  font-size: 16px;
+  background: $dark-grey;
+  color: $dark-white;
+  padding: 50px;
+
+  &::-webkit-scrollbar {
+    height: 10px;
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $dark-white;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $dark-grey;
+  }
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+span {
+  height: 50px;
+}
+
+main {
+  margin: 70px 0 20px;
+
+  ul {
+    display: grid;
+    list-style: none;
+    grid-gap: 32px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="app.js" defer></script>
+    <title>Grocery List</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Grocery List</h1>
+        <form id="search">
+          <input type="text" placeholder="Search items" />
+        </form>
+      </header>
+      <main>
+        <ul>
+          <li>
+            <p>Carrots</p>
+            <button>delete</button>
+          </li>
+          <li>
+            <p>Milk</p>
+            <button>delete</button>
+          </li>
+          <li>
+            <p>Potatos</p>
+            <button>delete</button>
+          </li>
+          <li>
+            <p>Cereal</p>
+            <button>delete</button>
+          </li>
+        </ul>
+      </main>
+      <form id="add">
+        <input
+          required
+          type="text"
+          name="add"
+          id="input-form"
+          placeholder="Add an item"
+        />
+        <button>Add</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+@import "keys";
+@import "display";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(45deg, rgb(32, 118, 248), #1eecd0);
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  display: flex;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 4vh;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  opacity: 1;
+}

@@ -1,0 +1,28 @@
+@mixin ul-scrollbar() {
+  &::-webkit-scrollbar {
+    border-radius: 2px;
+    height: 10px;
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: cadetblue;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #eee;
+  }
+}
+
+@mixin button-states() {
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    color: cadetblue;
+    border: 2px solid cadetblue;
+  }
+  &:visited {
+    background-color: cadetblue;
+    color: white;
+  }
+}

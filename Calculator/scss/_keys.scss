@@ -1,0 +1,79 @@
+.calc__keys {
+  width: 300px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  grid-template-rows: repeat(5, 80px);
+  grid-template-areas:
+    ". . . . "
+    "seven eight nine AC"
+    "four five six DEL"
+    "one two three equal"
+    "zeroo zeroo period equal";
+
+  .AC,
+  .DEL {
+    font-size: 1.15rem;
+  }
+}
+
+button {
+  background-color: rgba(24, 26, 27, 0.75);
+  border: 1px solid rgb(48, 52, 54);
+  font-size: 1.3rem;
+  color: rgb(232, 230, 227);
+  cursor: pointer;
+}
+
+.calc__keys > button:hover {
+  background-color: rgba(24, 26, 27, 0.9);
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.zero {
+  grid-area: zeroo;
+}
+.period {
+  grid-area: period;
+}
+.equal {
+  grid-area: equal;
+  background-color: rgb(255, 60, 0);
+}
+
+.calc__keys > .equal:hover {
+  background-color: rgb(180, 40, 0);
+}
+
+.AC {
+  grid-area: AC;
+}
+.DEL {
+  grid-area: DEL;
+}

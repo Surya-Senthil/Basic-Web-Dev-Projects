@@ -1,0 +1,38 @@
+@import "vars";
+
+form {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+
+  input {
+    font-size: 1.6rem;
+    height: 40px;
+    width: calc(max(500px, 20vw));
+    padding: 10px;
+    border-bottom: 1px solid;
+
+    &::placeholder {
+      color: currentColor;
+    }
+  }
+
+  button {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 9px 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background: $dark-white;
+    color: $dark-grey;
+    border: 3px solid $dark-white;
+
+    &:hover {
+      cursor: pointer;
+      background: $dark-grey;
+      color: $dark-white;
+      transition: background 0.3s ease-in-out;
+    }
+  }
+}
